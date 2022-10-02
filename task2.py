@@ -7,5 +7,10 @@
 
 my_list = [2, 3, 4, 5, 6]
 product_pair_numbers = 0
-for i in range(0, len(my_list)-1):
-    product_pair_numbers = my_list[i]*my_list[len -1]
+step = 0
+if len(my_list) % 2 == 0:
+    step = len(my_list)/2
+else:
+    step = len(my_list)/2 +1
+for elem in range(len(my_list)):
+    
